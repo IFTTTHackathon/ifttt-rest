@@ -1,5 +1,3 @@
-FROM tomcat:8.0
+FROM tomcat:8.5.35-jre8
 
-ADD ./src/ /usr/local/tomcat/webapps/ifttt/src/
-ADD ./WebContent/ /usr/local/tomcat/webapps/ifttt/WebContent/
-ADD ./pom.xml /usr/local/tomcat/webapps/ifttt/pom.xml
+ADD ./hackrest.war /usr/local/tomcat/webapps/
